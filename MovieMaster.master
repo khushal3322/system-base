@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MovieMaster.master.cs" Inherits="MovieMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Home</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/icofont.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 55px;
+            height: 52px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/dashboard2.jpg" class="auto-style1" alt="Logo" width="50" height="100">
+                    <asp:Label ID="lblName" runat="server" />
+                </a>
+
+                <!-- Buttons Group -->
+                <div class="btns-header-group d-sm-flex d-lg-none">
+                    <span data-bs-toggle="modal" data-bs-target="#login-modal">
+                        <a class="auth-btn me-3" data-bs-toggle="tooltip" href="javascript:void(0)" aria-label="Login / Register" data-bs-original-title="Login / Register">
+                            <i class="icofont-ui-user"></i>
+                            <!-- Login / Register -->
+                        </a>
+                    </span>
+
+                   
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <i class="icofont-navigation-menu"></i>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav flex-md-wrap main-menu m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home.aspx">HOME</a>
+                        </li>
+         
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.aspx">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AboutUs.aspx">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UserLogin.aspx">LOG OUT</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+        </nav>
+    </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <!-- Start Categories footer-navbar -->
+            <nav class="navbar footer-navbar">
+                <div class="container">
+                    <ul class="nav footer-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" ">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" >English movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Arabic Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" >Netflix movies</a>
+                        </li>
+       
+                        <li class="nav-item">
+                            <a class="nav-link" ">Indian movies</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="copy-right pt-4 pb-4">
+                <div class="container">
+                    <div class="text-center">
+                        <p>Copyright © KHUSHAL GAWAS</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </form>
+</body>
+<script src="assets/script/jquery-3.6.1.min.js.download"></script>
+<script src="assets/script/jquery.nicescroll.min.js.download"></script>
+<script src="assets/script/bootstrap.bundle.min.js.download"></script>
+<script src="assets/script/slick.min.js.download"></script>
+<script src="assets/script/app.js.download"></script>
+
+</html>
